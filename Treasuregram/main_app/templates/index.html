@@ -1,15 +1,6 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <link rel="icon" href="{% static '/images/favicon.ico' %}" type="image/x-icon" />
-            <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" media="screen">
-            <link href="{% static 'style.css' %}" rel="stylesheet" media="screen">
-            <title> TreasureGram </title>
-        </head>
-        <body>
+
             {% block content %}
                 <div class="row">
                     {% for treasure in treasures %}
@@ -18,6 +9,9 @@
                                 <div class="treasure panel panel-default">
                                     <div class="panel-heading">
                                         <h2 class="panel-title">{{ treasure.name }}</h2>
+                                        <a class="panel-username" href="/user/{{ treasure.user.username }}">
+                                            by:{{ treasure.user.username }}
+                                        </a>
                                     </div>
                                     <!--<div class="panel-body">-->
                                         <div class="treasure-photo">
@@ -68,5 +62,4 @@
                     </div>
                 </div>
             {% endblock %}
-        </body>
-    </html>
+

@@ -78,4 +78,30 @@ passed as argument. In it pass class Meta where you specify model and fields in 
 * Add a special debugging URL to _urls.py_ to serve media files locally
 
 
+## 4.1 Model Relationships - User Model
+
+[click here for video](https://codeschool-vfs.cdn-ec.viddler.com/codeschool_m2vbej2klmcg1x3ysk93ofkzots0xv.mp4?fd9f2a1c14aadf1069f046ce61f41e2b05c31bf4bc1c0f4df9c4be0f6344bf7cb603d95b5a6efc9193188296cc64190b69798175acf290f45ca93bad7fe8d4c0e1e7c3a72adb290ca052a71cb288f6256818)
+
+* One to one
+* One to many
+* Many to Many
+Django actually creates a **User model** as _part of the auth module_. 
+
+* Do this by adding **ForeignKey** to _models.py_.
+* Migrate DB changes
+* You can add user through admin page
+* Adjust _views.py_ to form user to object
+* Create route to user name
+
+## 4.2 User Authentication
+
+[click here for video](https://codeschool-vfs.cdn-ec.viddler.com/codeschool_7oegzjumieeu1whh75feija1w7b2k7.mp4?fd9f2a1c14aadf1069f046ce61f41e2b05c31bf4bc1c0f4df9c4be0f6344b17e9f75571e7782ca3701ea39baf4f22c621b8c3201e129cf4668f5b506b0400a995192ec4c8f8dc5cbb5f485f47acd8af5f0f8)
+
+The steps are:
+
+* Create a URL
+* Create a login form
+* Create a views that handles login
+* Create a template
+
 
