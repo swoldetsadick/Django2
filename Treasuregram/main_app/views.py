@@ -35,9 +35,13 @@ def post_treasure(request):
     :return: A redirects to home page
     """
     form = TreasureForm(request.POST)
+    """
     if form.is_valid():
         treasure = Treasure(name=form.cleaned_data['name'], value=form.cleaned_data['value'],
                             material=form.cleaned_data['material'], location=form.cleaned_data['location'],
                             img_url=form.cleaned_data['img_url'])
         treasure.save()
+    """
+    if form.is_valid():
+        form.save(commit=True)
     return HttpResponseRedirect('/')

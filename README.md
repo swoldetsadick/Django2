@@ -59,4 +59,11 @@ How to share repeated html code across web-pages.
 
 For more complex renders, like passwords and date pickers you can use **form widgets**.
 
+## 2.2 Model Forms
+
+[click here for video](https://codeschool-vfs.cdn-ec.viddler.com/codeschool_13544w8ks1zby1i6uqq417imfauxo9.mp4?fd9f2a1c14aadf1069f046ce61f41e2b05c31bf4bc1c0f4df9c4be0f6346b07c1bcf62d49fc63d5cac3f94ee63c1b260c9302db783598fee4e6764fb75e569ed3ab711226009d3ce70d5af2ea367cdb64edb)
+
+Here we use **meta classes**.
+To do it in _forms.py_, from .models import the needed model, then create the class objectForm with Forms.ModelForm 
+passed as argument. In it pass class Meta where you specify model and fields in the model you need.
 
