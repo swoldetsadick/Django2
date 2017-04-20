@@ -42,4 +42,16 @@ What are the steps? <br>
 
 [click here for video](https://codeschool-vfs.cdn-ec.viddler.com/codeschool_94y97pg1l0f9q2uvn3dkm724f9rbqg.mp4?fd9f2a1c14aadf1069f046ce61f41e2b05c31bf4bc1c0f4df9c4be0f6346bb73a31633cdb12a0e4199c76b97264db3e8f469512c83bf5c9172f390d7a06a3ed0de31df204b3dcbc185fd90b663843cd04c81)
 
+How to share repeated html code across web-pages.
+
+* Step 1 - Create a template/base.html for base template
+* Step 2 - Create a {% extends 'base.html' %}
+* Step 3 - {% block content %}{ endblock }
+
+## 2.1 Django Forms
+
+[click here for video](https://codeschool-vfs.cdn-ec.viddler.com/codeschool_1rgnc9lgvqpki1auyhis7fyv00j9p3.mp4?fd9f2a1c14aadf1069f046ce61f41e2b05c31bf4bc1c0f4df9c4be0f6346bf7917d89ad9fdbe62874a418ece97bfca12275c38690bc41bd63146a9b21ac891a84a89ecba36d443d3b7c770de6ff7ed2a275f)
+
+
+
 

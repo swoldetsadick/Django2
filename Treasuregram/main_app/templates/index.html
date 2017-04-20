@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
 <!DOCTYPE html>
     <html lang="en">
@@ -9,10 +10,7 @@
             <title> TreasureGram </title>
         </head>
         <body>
-            <nav class="navbar navbar-default navbar-static-top text-center" role="navigation">
-                <a href="/"><img src="{% static "images/logo.png" %}" height="90"  ></a>
-            </nav>
-            <main class="container container--mw700">
+            {% block content %}
                 <div class="row">
                     {% for treasure in treasures %}
                         <div class="col-md-4">
@@ -57,11 +55,6 @@
                         {% endif %}
                     {% endfor %}
                 </div>
-            </main>
-            <footer class="footer container text-center" role="contentinfo">
-                <img src="{% static 'images/brand-icon.png' %}" height="50" alt="">
-                © TreasureGram 2016
-                <img src="{% static 'images/brand-icon.png' %}" height="50" alt="">
-            </footer>
+            {% endblock %}
         </body>
     </html>

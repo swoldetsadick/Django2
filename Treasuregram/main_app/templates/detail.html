@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
 <!DOCTYPE html>
     <html lang="en">
@@ -9,7 +10,7 @@
             <title> Details </title>
         </head>
         <body>
-            <main class="container container--mw700">
+                {% block content %}
                     <div class="treasure panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">{{ treasure.name }}</h3>
@@ -43,11 +44,7 @@
                             </table>
                         </div>
                     </div>
-                <footer class="footer container text-center" role="contentinfo">
-                <img src="{% static 'images/brand-icon.png' %}" height="50" alt="">
-                © TreasureGram 2016
-                <img src="{% static 'images/brand-icon.png' %}" height="50" alt="">
-               </footer>
+                {% endblock %}
         </body>
     </html>
 
