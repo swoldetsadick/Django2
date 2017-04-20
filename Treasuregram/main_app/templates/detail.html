@@ -1,15 +1,5 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <link rel="icon" href="{% static '/images/favicon.ico' %}" type="image/x-icon" />
-            <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" media="screen">
-            <link href="{% static 'style.css' %}" rel="stylesheet" media="screen">
-            <meta charset="UTF-8">
-            <title> Details </title>
-        </head>
-        <body>
                 {% block content %}
                     <div class="treasure panel panel-default">
                         <div class="panel-heading">
@@ -45,5 +35,3 @@
                         </div>
                     </div>
                 {% endblock %}
-        </body>
-    </html>
