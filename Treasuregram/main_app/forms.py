@@ -20,4 +20,4 @@ class TreasureForm(forms.ModelForm):
         """ This is meta class we got from forms"""
         model=Treasure
         exclude=[]
-        fields=['name','value','material','location','img_url']
+        fields=['name','value','material','location','image'] # 'img_url'

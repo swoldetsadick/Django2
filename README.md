@@ -67,3 +67,15 @@ Here we use **meta classes**.
 To do it in _forms.py_, from .models import the needed model, then create the class objectForm with Forms.ModelForm 
 passed as argument. In it pass class Meta where you specify model and fields in the model you need.
 
+## 3.1 The image field
+
+[click here for video](https://codeschool-vfs.cdn-ec.viddler.com/codeschool_s3wredjukrxp1ppoqgxegwadn17szj.mp4?fd9f2a1c14aadf1069f046ce61f41e2b05c31bf4bc1c0f4df9c4be0f6347bb78d166584e4a219ecfc9f05d3877fb0c941a2913486a07a171e41c035b030ee8f9d4fda778c4e219586067d038171459ca0c68)
+
+* Add image field to model
+* Install pillow (an image processing library)
+* Migrate changes to DB
+* Update settings.py to add a media Directory
+* Add a special debugging URL to _urls.py_ to serve media files locally
+
+
+

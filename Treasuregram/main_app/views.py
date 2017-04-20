@@ -34,7 +34,7 @@ def post_treasure(request):
     :param request: A POST request
     :return: A redirects to home page
     """
-    form = TreasureForm(request.POST)
+    form = TreasureForm(request.POST, request.FILES)
     """
     if form.is_valid():
         treasure = Treasure(name=form.cleaned_data['name'], value=form.cleaned_data['value'],
