@@ -27,6 +27,7 @@ body {
   background: #fff6e8;
   border-color: #ece4cf;
   box-shadow: 0 2px 2px #a58d65;
+  /*margin-top: 5%;*/
 }
 
 .panel-default .panel-heading {
@@ -68,21 +69,22 @@ body {
   background: #fdf2e1;
   float: left;
   margin-right: 5%;
+  margin-top: 1px;
   padding: 20px;
   position: relative;
   text-align: center;
-  width: 50%;
+  width: 100%;
 }
 
 .treasure-photo img {
   height: 180px;
+  width: 200px;
+  margin-top: 10px;
   max-width: 100%;
 }
 
 .treasure-table {
   float: left;
-  margin-top: 10px;
-  width: 45%;
 }
 
 .treasure-table img {

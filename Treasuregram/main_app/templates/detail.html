@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="icon" href="{% static '/images/favicon.ico' %}" type="image/x-icon" />
+            <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" media="screen">
+            <link href="{% static 'style.css' %}" rel="stylesheet" media="screen">
+            <meta charset="UTF-8">
+            <title> Details </title>
+        </head>
+        <body>
+            <main class="container container--mw700">
+                    <div class="treasure panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{ treasure.name }}</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="treasure-photo">
+                            <img src="{{ treasure.img_url }}" height="100">
+                            </div>
+                            <table class="treasure-table">
+                                <tr>
+                                    <th>
+                                        <img src="{% static "images/material-icon.png" %}" alt="Material Icon">
+                                        Material:
+                                    </th>
+                                    <td>{{ treasure.material }}</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="{% static "images/value-icon.png" %}" alt="Value Icon">
+                                        Value:
+                                    </th>
+                                    <td>${{ treasure.value }}</td>
+                                </tr>
+                                <tr>
+                                        <th>
+                                            <img src="{% static "images/location-icon.png" %}" alt="Location Icon">
+                                            Location:
+                                        </th>
+                                    <td>{{ treasure.location }}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                <footer class="footer container text-center" role="contentinfo">
+                <img src="{% static 'images/brand-icon.png' %}" height="50" alt="">
+                © TreasureGram 2016
+                <img src="{% static 'images/brand-icon.png' %}" height="50" alt="">
+               </footer>
+        </body>
+    </html>
+
+<!--t = Treasure(name='Golden Monkey', value=1000000.00, material="Gold", location="Cairo, Egypt", imr_url="")-->
