@@ -52,6 +52,11 @@ How to share repeated html code across web-pages.
 
 [click here for video](https://codeschool-vfs.cdn-ec.viddler.com/codeschool_1rgnc9lgvqpki1auyhis7fyv00j9p3.mp4?fd9f2a1c14aadf1069f046ce61f41e2b05c31bf4bc1c0f4df9c4be0f6346bf7917d89ad9fdbe62874a418ece97bfca12275c38690bc41bd63146a9b21ac891a84a89ecba36d443d3b7c770de6ff7ed2a275f)
 
+* Create a _forms.py_ module which will use **from django import forms** to create forms <br>
+* In _urls.py_ create a POST URL handling <br>
+* In _views.py_ create post view
+* Don't forget to update main def in _views.py_ with new form
 
+For more complex renders, like passwords and date pickers you can use **form widgets**.
 
 
