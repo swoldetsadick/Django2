@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-
-            {% block content %}
+{% block content %}
                 <div class="row">
                     {% for treasure in treasures %}
                         <div class="col-md-4">
@@ -13,42 +12,24 @@
                                             by:{{ treasure.user.username }}
                                         </a>
                                     </div>
-                                    <!--<div class="panel-body">-->
                                         <div class="treasure-photo">
                                                 <img src="{{ treasure.image }}" height="100">
                                         </div>
-                                        <!--<table class="treasure-table">
-                                            <tr>
-                                                <th>
-                                                    <img src="{% static "images/material-icon.png" %}" alt="Material Icon">
-                                                    Material:
-                                                </th>
-                                                <td>{{ treasure.material }}</td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    <img src="{% static "images/value-icon.png" %}" alt="Value Icon">
-                                                    Value:
-                                                </th>
-                                                <td>${{ treasure.value }}</td>
-                                            </tr>
-                                            <tr>
-                                                    <th>
-                                                        <img src="{% static "images/location-icon.png" %}" alt="Location Icon">
-                                                        Location:
-                                                    </th>
-                                                <td>{{ treasure.location }}</td>
-                                            </tr>
-                                        </table> -->
-                                    <!--</div>-->
                                 </div>
+                                <button id="likes" data-id="{{ treasure.id }}" class="btn btn-mimi btn-danger glyphicon glyphicon-heart" type="button">
+                                    {% if treasure.likes > 0 %}
+                                        {{ treasure.likes }}
+                                    {% endif %}
+                                </button>
                             </a>
                         </div>
                         {% if forloop.counter|divisibleby:"3" %}
                             </div><div class="row">
                         {% endif %}
+
                     {% endfor %}
                 </div>
+
                 <div class="treasure panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title"> Add Treasure </h3>
@@ -59,6 +40,7 @@
                             {{ form.as_p }}
                             <input type="submit" value="Submit" class="submit-row">
                         </form>
+
                     </div>
                 </div>
             {% endblock %}

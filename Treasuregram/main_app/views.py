@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """ This module specifies views. """
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from .models import Treasure
 from .forms import TreasureForm, LoginForm
 from django.contrib.auth.models import User
@@ -96,3 +96,17 @@ def logout_view(request):
     """
     logout(request)
     return HttpResponseRedirect('/')
+
+
+def like_treasure(request):
+    """"""
+    treasure_id = request.GET.get('treasure_id', None)
+    likes = 0
+    if (treasure_id):
+        treasure = Treasure.objects.get(id=int(treasure_id))
+        print ("YAYAY", Treasure.objects.get(id=int(treasure_id)))
+        if treasure is not None:
+            likes = treasure.likes + 1
+            treasure.likes = likes
+            treasure.save()
+    return HttpResponse(likes)

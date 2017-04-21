@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^user/(\w+)/$', views.profile, name='profile'),
     url(r'^login/$', views.login_view, name='login'),
     url(r'^login/$', views.logout_view, name='logout'),
+    url(r'^like_treasure/$', views.like_treasure, name='like_treasure'),
 ]
 
 # add to the bottom of your file
