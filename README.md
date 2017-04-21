@@ -123,7 +123,7 @@ A like button
 * AJAX
 * Model
 
-## 5.2 
+## 5.2 AJAX POST
 
 [click here for video](https://codeschool-vfs.cdn-ec.viddler.com/codeschool_y0cyv4xxh6d6181colekz9ljt40gx6.mp4?fd9f2a1c14aadf1069f046ce61f41e2b05c31bf4bc1c0f4df9c4be0f634fbb7361bc3d1078209201a43c7b44bb75ab97e306837040def3e7991e80019a8da130c62d6b3eef782c5caa9d35acf09ed0c42cfa)
 

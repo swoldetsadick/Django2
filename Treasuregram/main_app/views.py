@@ -104,7 +104,6 @@ def like_treasure(request):
     likes = 0
     if (treasure_id):
         treasure = Treasure.objects.get(id=int(treasure_id))
-        print ("YAYAY", Treasure.objects.get(id=int(treasure_id)))
         if treasure is not None:
             likes = treasure.likes + 1
             treasure.likes = likes
