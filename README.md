@@ -104,4 +104,6 @@ The steps are:
 * Create a views that handles login
 * Create a template
 
+LoginForm(), UserCreationForm()
+
 

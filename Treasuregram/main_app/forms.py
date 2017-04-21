@@ -21,3 +21,9 @@ class TreasureForm(forms.ModelForm):
         model=Treasure
         exclude=[]
         fields=['name','value','material','location','image'] # 'img_url'
+
+
+class LoginForm(forms.Form):
+    """ This is Treasure form class using meta class"""
+    username = forms.CharField(label='User Name', max_length=64)
+    password = forms.CharField(widget=forms.PasswordInput())
