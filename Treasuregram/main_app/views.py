@@ -86,3 +86,13 @@ def login_view(request):
     else:
         form = LoginForm()
         return render(request, 'login.html', {'form': form})
+
+
+def logout_view(request):
+    """
+    Logout view renderer
+    :param request: A request
+    :return:
+    """
+    logout(request)
+    return HttpResponseRedirect('/')
