@@ -111,4 +111,6 @@ LoginForm(), UserCreationForm()
 [click here for video](https://codeschool-vfs.cdn-ec.viddler.com/codeschool_qjh4vuu4664fp1d6oy5t69swiwd6oh.mp4?fd9f2a1c14aadf1069f046ce61f41e2b05c31bf4bc1c0f4df9c4be0f634eba7f779c3554f51ef72d037b8a2f5709002d4cda4a510fcedb82e10e8d3b9e5da5199c8913dda118e8c6ce2dbf95262da2fdc747)
 
 
+## 5.1 Authentication Links
 
+[click here for video](https://codeschool-vfs.cdn-ec.viddler.com/codeschool_uo325jm8rrunjifvi6my7why19r3dz.mp4?fd9f2a1c14aadf1069f046ce61f41e2b05c31bf4bc1c0f4df9c4be0f634ebc735517a30fc775735f83d53be3859d49575a658cdf35773c0ca6bbc8d84a1447a011cfeb58126d432ee024d93bafd6b46ee366)
